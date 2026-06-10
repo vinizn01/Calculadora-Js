@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora das 4 Operações</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #e9ecef;
+            margin: 0;
+        }
+        .calculadora {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            text-align: center;
+            width: 300px;
+        }
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+        }
+        button:hover { background-color: #0056b3; }
+        #resultado {
+            font-size: 22px;
+            font-weight: bold;
+            margin-top: 15px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="calculadora">
+        <h2>Calculadora</h2>
+        
+        <input type="number" id="num1" placeholder="Primeiro número">
+        
+        <select id="operacao">
+            <option value="soma">Somar (+)</option>
+            <option value="subtracao">Subtrair (-)</option>
+            <option value="multiplicacao">Multiplicar (×</option>
+            <option value="divisao">Dividir (÷)</option>
+        </select>
+        
+        <input type="number" id="num2" placeholder="Segundo número">
+        
+        <button id="btnCalcular">Calcular</button>
+        
+        <div id="resultado">Resultado: -</div>
+    </div>
+
+    <script src="calculadora.js"></script>
+</body>
+</html>
